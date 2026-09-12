@@ -1924,7 +1924,8 @@ public class UnitUtil {
         if (((weapon instanceof SRMWeapon) || (weapon instanceof SRTWeapon)) &&
               (weapon.getRackSize() != 2) &&
               (weapon.getRackSize() != 4) &&
-              (weapon.getRackSize() != 6)) {
+              (weapon.getRackSize() != 6) &&
+              (weapon.getRackSize() != 8)) {
             return true;
         }
         if ((weapon instanceof MRMWeapon) && (weapon.getRackSize() < 10)) {
