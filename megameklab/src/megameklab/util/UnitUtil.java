@@ -1918,14 +1918,17 @@ public class UnitUtil {
               (weapon.getRackSize() != 5) &&
               (weapon.getRackSize() != 10) &&
               (weapon.getRackSize() != 15) &&
-              (weapon.getRackSize() != 20)) {
+              (weapon.getRackSize() != 20) &&
+              (weapon.getRackSize() != 25) &&
+              (weapon.getRackSize() != 30)) {
             return true;
         }
         if (((weapon instanceof SRMWeapon) || (weapon instanceof SRTWeapon)) &&
               (weapon.getRackSize() != 2) &&
               (weapon.getRackSize() != 4) &&
               (weapon.getRackSize() != 6) &&
-              (weapon.getRackSize() != 8)) {
+              (weapon.getRackSize() != 8) &&
+              (weapon.getRackSize() != 10)) {
             return true;
         }
         if ((weapon instanceof MRMWeapon) && (weapon.getRackSize() < 10)) {
